@@ -29,6 +29,11 @@ img:hover{
     transform: rotate(5deg);
 }
 
+img:active{
+    scale: 1;
+    transition: 50ms;
+}
+
 /* --- MAIN ------------------------------ */
 
 main{
@@ -158,6 +163,7 @@ footer a:hover{
     .container{
         backdrop-filter: blur(15px);
         width: 100%;
+        max-width: 480px;
         padding: 30px 25px;
         border: 2px solid #4d4d4d83;
         border-radius: 20px;
@@ -168,14 +174,18 @@ footer a:hover{
     }
 
     img{
-        height: 130px;
+        height: 120px;
         width: 100px;
         transition: 150ms;
     }
     
-   img:hover{
-        scale: 1.1;
+    img:hover{
+        scale: 1.;
         transition: 200ms;
+    }
+    img:active{
+        scale: 1;
+        transition: 50ms;
     }
 
     .card-top{

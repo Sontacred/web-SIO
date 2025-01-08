@@ -86,7 +86,6 @@ main p{
 }
 
 main a:hover{
-    background-image: url(img/TOPO2.webp);
     color: #FFFFFF;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;    

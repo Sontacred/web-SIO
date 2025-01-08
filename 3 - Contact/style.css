@@ -201,6 +201,11 @@ footer a:hover{
         margin: 0px 8px;
     }
 
+    .card-middle p{
+        font-size: large;
+        transition: 150ms;
+    }
+
     .card-bottom h1{
         font-size: medium;
         transition: 150ms;

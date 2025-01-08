@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog - Lucas ELANA</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><span>s.on</span> Blog</a>
+                </div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="article.html">Veille techno</a></li>
+                    <li><a href="personnel.html">personnel</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="information.htl">Information</a></li>
+                </ul>
+                <a href="../index.html" class="action-btn">Accueil</a>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="personnel.html">personnel</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="information.htl">Information</a></li>
+                <li><a href="../index.html" class="action-btn">Accueil</a></li>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-home">
+                <h1>Welcome</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur <br/>
+                    adipisicing elit. Sapiente, recusandae?
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2025 Sontacred
+            <a href="3-contact.html">contact</a>
+            <a href="https://github.com/Sontacred/sio-web" target="_blank">
+                <p><i class="fab fa-github"></i></p>
+            </a>
+            <a href="#">
+                <p><i class="fab fa-linkedin"></i></p>
+            </a>
+            <a href="#">
+                <p><i class="fab fa-instagram"></i></p>
+            </a>
+        </footer>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDownMenu = document.querySelector('.dropdown-menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>

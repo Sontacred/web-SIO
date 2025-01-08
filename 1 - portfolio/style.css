@@ -1,0 +1,359 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+body{
+    background: url(../img/TOPO1.png) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* --------------- HEADER --------------- */
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 0 2rem;
+    z-index: 3000;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle-btn{
+    display: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.action-btn{
+    background: #515151;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    text-decoration: none;
+}
+
+.action-btn:active{
+    scale: 0.95;
+}
+
+/* --------------- DROPDOWN --------------- */
+
+.dropdown-menu{
+    background: #101010;
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 70px; 
+    right: 2rem;
+    height: 0; 
+    width: 300px;
+    border-radius: 10px;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 100;
+}
+
+.dropdown-menu.open{
+    height: fit-content;
+    padding: 20px 0px;
+    border: 1px solid #464646;
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------- ARTICLE --------------- */
+
+section.hero-main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+section.hero-main h1{
+    font-size: 6rem;
+}
+
+section.hero-article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article{
+    backdrop-filter: blur(40px);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    margin: 20px 0px;
+    padding: 10px;
+    width: 1200px;
+    border-radius: 15px;
+    border: 2px solid #464646;
+    transition: 150ms;
+}
+
+.article:hover{
+    scale: 1.03;
+    transition: 150ms;
+}
+
+.article img{
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 600px;
+}
+
+h1{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.article a{
+    color: #5792ff;
+    font-weight: bold;
+}
+
+/* Compétences */
+
+.article li{
+    margin: 40px 10px;
+}
+
+.heading{
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.skillbar{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+}
+
+.skillbar span{
+    display: block;
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.skill-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skill-head h1{
+    font-size: 30px;
+}
+
+.html{
+    width: 95%;
+}
+
+.css{
+    width: 92%;
+}
+
+.py{
+    width: 70%;
+}
+
+.linux{
+    width: 76%;
+}
+
+.sql{
+    width: 50%;
+}
+
+.js{
+    width: 0%;
+}
+
+li .icon{
+    height: 40px;
+    width: 40px;
+}
+
+/* Projets */
+
+/* Contact */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.link a{
+    margin-left: 10px;
+}
+
+/* --------------- FOOTER --------------- */
+
+footer{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px; 
+    width: 350px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* --------------- RESPONSIVE --------------- */
+
+@media(max-width: 1250px){
+    .navbar .links, .navbar .action-btn{
+        display: none;
+    }
+
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+
+    section.hero-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .article{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .article:hover{
+        scale: 1;
+    }
+
+    .skill-head h1{
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 776px){
+    section.hero-main h1{
+        font-size: 3.5rem;
+    }
+
+    section.hero-main strong{
+        font-size: 0.8rem;
+    }
+
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .article{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .article img{
+        height: 100%;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .article .icon{
+        height: 40px;
+        width: 40px;
+    }
+
+    .article:hover{
+        scale: 1;
+    }
+}

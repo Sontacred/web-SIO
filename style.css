@@ -1,0 +1,128 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: #101010;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+h1{
+    color: #FFFFFF;
+}
+
+/* --- HEADER ------------------------------ */
+
+header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 2rem;
+    z-index: 3000;
+}
+
+header a{
+    color: #FFFFFF;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px; 
+    width: 100%;
+}
+
+.navbar .logo{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.navbar .logo a{
+    margin-right: 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+/* --- MAIN ------------------------------ */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+}
+
+main a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #101010;
+    font-size: x-large;
+    width: 100vw;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid #101010;
+    transition: 150ms;
+}
+
+main p{
+    font-size: large;
+}
+
+main a:hover{
+    background-image: url(img/TOPO2.webp);
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;    
+    transition: 150ms;
+}
+
+/* --- FOOTER ------------------------------ */
+
+footer{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; 
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+footer a{
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVE ------------------------------ */
+
+@media(max-width: 776px){
+    main a{
+        color: #FFFFFF;
+    }
+
+    main p{
+        font-size: small;
+    }
+}

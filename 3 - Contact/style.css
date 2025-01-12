@@ -36,6 +36,25 @@ img:active{
 
 /* --- MAIN ------------------------------ */
 
+.back-btn{
+    background: #3f3f3f;
+    color: #FFFFFF;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 150ms;
+}
+
+.back-btn:hover{
+    background: #555555;
+    scale: 1.2;
+    transition: 150ms;
+}
+
+.back-btn:active{
+    scale: 1;
+}
+
 main{
     display: flex;
     flex-direction: column;

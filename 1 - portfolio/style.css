@@ -73,6 +73,7 @@ header{
 }
 
 .action-btn:hover{
+    background: #6e6e6e;
     scale: 1.05;
     text-decoration: none;
 }

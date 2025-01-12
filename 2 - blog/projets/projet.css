@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url(../img/TOPO1.png) fixed;
+    background: url(../../img/TOPO1.png) fixed;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -87,7 +87,7 @@ header{
 }
 
 .action-btn:hover{
-    background: #6e6e6e;
+    background: #FF5757;
     scale: 1.05;
     text-decoration: none;
 }
@@ -108,7 +108,7 @@ header{
     height: 0; 
     width: 300px;
     border-radius: 10px;
-    transition: 50ms;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 100;
 }
 
@@ -116,7 +116,6 @@ header{
     height: fit-content;
     padding: 20px 0px;
     border: 1px solid #464646;
-    transition: 150ms;
 }
 
 .dropdown-menu li{
@@ -152,53 +151,10 @@ section.hero-home{
 /* --- ARTICLE ------------------------------ */
 
 section.hero-container{
-    color: #FFFFFF;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 60px;
-}
-
-.veille-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-    max-width: 350px;
-    text-align: justify;
-    color: #FFFFFF;
-}
-
-.veille-info h1{
-    font-size: xx-large;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.veille-info a{
-    display: flex;
-    color: #FFFFFF;
-    padding: 10px 15px;
-    font-weight: bold;
-    border: 1px solid transparent;
-    border-radius: 100px;
-    transition: 150ms;
-}
-
-.veille-info a p{
-    margin-left: 5px;
-}
-
-.veille-info a:hover{
-    backdrop-filter: blur(5px);
-    padding: 10px 30px;
-    text-decoration: none;
-    border: 1px solid #FFFFFF;
-    transition: 150ms;
-}
-
-.veille-info a:active{
-    scale: 0.95;
 }
 
 .article{
@@ -243,84 +199,8 @@ section.hero-container .article img{
     margin-bottom: 5px;
 }
 
-/* --- PERSONNEL ------------------------------ */
+/* projets */
 
-.vertical-article{
-    backdrop-filter: blur(40px);
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: justify;
-    margin: 20px 0px;
-    padding: 10px;
-    width: 1200px;
-    border-radius: 15px;
-    border: 2px solid #464646;
-    transition: 150ms;
-}
-
-.resume{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    text-align: left;
-}
-
-.left-resume{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-right: 10px;
-    padding: 20px;
-    min-height: 600px;
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
-}
-
-.left-resume strong{
-    color: #D7D7D7;
-    font-size: x-large;
-}
-
-.left-resume p{
-    margin: 10px 0px;
-}
-
-.right-resume{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    min-height: 600px;
-    width: 100%;
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
-}
-
-.resume-title{
-    font-size: xx-large;
-    margin-bottom: 10px;
-}
-
-.resume-educ{
-    padding: 10px;
-    border-top: 1px solid #FFFFFF;
-}
-
-.resume-educ h1{
-    color: #D7D7D7;
-    font-size: x-large;
-    margin-bottom: 20px;
-}
-
-.resume-educ p{
-    margin-bottom: 20px;
-}
-
-/* --- PROJETS ------------------------------ */
 
 .projet-box{
     backdrop-filter: blur(40px);
@@ -328,7 +208,9 @@ section.hero-container .article img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: justify;
     max-width: 1200px;
+    width: 100%;
     margin: 10px 0px;
     padding: 20px 30px;
     border: 1px solid #515151;
@@ -336,16 +218,15 @@ section.hero-container .article img{
     transition: 150ms;
 }
 
-.projet-box:hover{
-    scale: 1.03;
-    transition: 150ms;
+.projet-box p{
+    margin: 10px 0px;
 }
 
 .projet-top{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -365,18 +246,18 @@ section.hero-container .article img{
 }
 
 .projet-bottom a{
-    background: #464646;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 10px 15px;
-    border: 1px solid #515151;
+    border: 1px solid #ffffff;
     border-radius: 30px;
     transition: 150ms;
 }
 
 .projet-bottom a:hover{
+    background: #9f9f9f44;
     scale: 1.1;
     text-decoration: none;
-    border: 1px solid #808080;
+    border: 1px solid #ffffff;
     transition: 150ms;
 }
 

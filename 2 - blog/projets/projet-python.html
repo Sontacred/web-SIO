@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet python</title>
+        <link rel="stylesheet" href="projet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
+    <body>
+
+        <!-- HEADER ------------------------------ -->
+
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Projet python</a>
+                </div>
+                <a href="../projets.html" class="action-btn">Retour</a>
+                <div class="toggle-btn">
+                    <a href="../projets.html">retour</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN ------------------------------ -->
+
+        <main>
+            <section class="hero-container">
+                <div class="projet-box">
+                    <div class="projet-top">
+                        <h1>Gestion de logs</h1>
+                        <div class="projet-logo">
+                            <img src="../../img/LOGO-Python.png">
+                            <img src="../../img/LOGO-SQL.png">
+                        </div>
+                    </div>
+                    <p>
+                        L'objectif de ce projet était de lier l'utilisation de python et de SQL pour traiter des fichiers de logs <br/>
+                        Le projet s'est déroulé en 9 étapes :
+                    </p>
+                    <p>
+                        <h1>Etape 1</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 2</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 3</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 4</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 5</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 6</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 7</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 8</h1>
+                        description
+                    </p>
+                    <p>
+                        <h1>Etape 9</h1>
+                        description
+                    </p>
+                    <div class="projet-bottom">
+                        <a href="https://drive.google.com/drive/u/2/folders/10DBEfa2_CPEDDKyh7DQgSwSi3TQO_jEZ?dmr=1&ec=wgc-drive-hero-goto" target="_blank">Ouvrir</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2025 Sontacred
+            <a href="#">contact</a>
+            <a href="https://github.com/Sontacred/sio-web" target="_blank">
+                <p><i class="fab fa-github"></i></p>
+            </a>
+            <a href="#">
+                <p><i class="fab fa-linkedin"></i></p>
+            </a>
+            <a href="#">
+                <p><i class="fab fa-instagram"></i></p>
+            </a>
+        </footer>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDownMenu = document.querySelector('.dropdown-menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>

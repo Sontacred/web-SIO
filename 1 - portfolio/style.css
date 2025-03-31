@@ -145,7 +145,7 @@ section.hero-article{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: justify;
     margin: 20px 0px;
     padding: 10px;
@@ -172,7 +172,7 @@ section.hero-article{
     object-fit: cover;
     margin-right: 20px;
     border-radius: 10px;
-    height: 600px;
+    width: 50%;
 }
 
 h1{
@@ -237,6 +237,10 @@ h1{
     width: 92%;
 }
 
+.php{
+    width: 65%;
+}
+
 .py{
     width: 70%;
 }
@@ -246,11 +250,7 @@ h1{
 }
 
 .sql{
-    width: 50%;
-}
-
-.js{
-    width: 0%;
+    width: 70%;
 }
 
 li .icon{
@@ -340,7 +340,7 @@ li .icon{
 }
 
 .link a{
-    margin-left: 10px;
+    margin: 0 0 0 10px;
 }
 
 /* --------------- FOOTER --------------- */
@@ -351,7 +351,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     height: 60px; 
-    width: 350px;
+    width: 300px;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -383,6 +383,7 @@ footer{
         flex-direction: row;
         align-items: center;
         width: 100%;
+        height: fit-content;
     }
     
     .article:hover{

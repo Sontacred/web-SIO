@@ -388,7 +388,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     height: 60px; 
-    width: 350px;
+    width: 300px;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -478,7 +478,6 @@ footer{
     }
 
     .left-resume{
-        margin-bottom: 10px;
         min-height: auto;
         width: 100%;
     }
